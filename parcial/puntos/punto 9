@@ -1,0 +1,34 @@
+ef pascal(row, column):
+    if row < 0 and column < 0:
+        return 0
+    elif row == 0 and column == 0:
+        return 1
+    elif row > 0 and column > 0:
+        return a
+
+
+
+x=int(input("digite numero de filas: "))
+row=int(input("Cordenada en  fila: "))
+column=int(input("Cordenada en columna: "))
+n=0
+k=0
+a=0
+import math 
+while (n<=x):
+    while(k<=n):
+        c=n-k
+        k1=math.factorial(c)*math.factorial(k)
+        respuesta=int(math.factorial(n)/k1)
+        k=k+1
+        print(respuesta, end=" ")
+        if n==row:
+            if k==column:
+                a=respuesta
+
+    print("")
+    n=n+1
+    k=0
+print("")
+print("La cordenada seria:")
+print(pascal(row, column))
