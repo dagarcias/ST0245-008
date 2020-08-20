@@ -1,0 +1,7 @@
+
+#Cedula1003395042
+
+x=42
+while x!=0:
+    print(x)
+    x=x-1
