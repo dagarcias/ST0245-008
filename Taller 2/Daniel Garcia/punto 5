@@ -1,0 +1,29 @@
+C1 = 1
+C2 = 2
+C3 = 3
+
+votos=[1,1,1,1,1,1,2,2,3,3,3,2,1,2,1,2,3,3,3,3,3]
+cont1=0
+cont2=0
+cont3=0
+
+for i in votos:
+    if i == 1:
+        cont1= cont1 + 1
+    elif i == 2:
+        cont2 = cont2 + 1
+    elif i == 3:
+        cont3 = cont3 +1 
+
+if cont1 > cont2 and cont1 > cont3:
+    print("Candidato 1 gano con ", cont1, "votos")
+
+elif cont2 > cont1 and cont2 > cont3:
+    print("Candidato 2 gano con ", cont2, "votos")
+
+elif cont3 > cont1 and cont3 > cont2:
+    print("Candidato 3 gano con ", cont3, "votos")
+
+elif cont1 == cont2 or cont1 == cont3 or cont2 == cont3:
+    print ("se produjo un empate") 
+         
