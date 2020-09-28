@@ -1,0 +1,24 @@
+x=int(input("digite numero"))
+
+linea1=[2,3,4]
+linea2=[6,7,8]
+linea3=[9,2,6]
+
+cont1= 0 
+
+for i in linea1:
+    if i == x:
+        cont1 = cont1+1
+
+for n in linea2:
+    if n == x:
+        cont1 = cont1+1
+
+for m in linea3:
+    if m == x:
+        cont1 = cont1+1
+
+if cont1 > 0:
+    print("si")
+else:
+    print("no")  
