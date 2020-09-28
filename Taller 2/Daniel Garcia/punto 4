@@ -1,0 +1,27 @@
+def shellSort(lista):
+    mitad = len(lista)//2
+    while mitad > 0:
+      for posicion_inicial in range(mitad):
+        reducir_busqueda(lista, posicion_inicial, mitad)
+
+      print("antes de la pasada",mitad, "nueva lista", palabras)
+      
+      mitad = mitad // 2
+
+
+
+def reducir_busqueda(nlist,start,gap):
+    for i in range(start+gap,len(nlist),gap):  
+
+        current_value = nlist[i]
+        posicion = i
+
+        while posicion>=gap and nlist[posicion-gap]>current_value:
+            nlist[posicion]=nlist[posicion-gap]
+            posicion = posicion-gap
+
+        nlist[posicion]=current_value
+
+lista1= [8,43,17,6,40,16,18,97,11,7]
+shellSort(lista1)
+print(lista1)
