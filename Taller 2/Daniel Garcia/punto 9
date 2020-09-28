@@ -1,0 +1,38 @@
+def init(self): #crear una instancia de conjunto vacía
+        self.theElements = list()
+
+    def len(self): # Tamaño de la lista
+        return len(self._theElements)
+
+    def contains(self,element): #si contiene un elemento
+        ndx=self._findPosition(element)
+        self._theElements.insert(ndx,element)
+
+    def remove(self,element): #para remover un elemento
+        assert element in self, 
+        ndx=self._finPosition(element)
+        self._theElements.pop(ndx)
+
+    def add(self, element): #para agregar un elemento
+        if element not in self:
+            ndx=self._findPosition(element)
+            self._theElements.insert(ndx,element)
+
+    def isSubsetOf(self,setB): #si A hace parte de B
+        for element in self:
+            if element not in setB:
+                return False
+        return True
+
+    def _findPosition(self, element): #encontrar la pocision de un elemento
+        low=0
+        high=len(theList) - 1 
+        while low<=high:
+            mid=(high+low)/2
+            if theList[mid]==target:
+                return mid
+            elif target<theList[mid]:
+                high=mid-1
+            else:
+                low=mid+1
+        return low
