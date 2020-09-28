@@ -1,0 +1,8 @@
+# Radix Sort: Es un algoritmo de ordenamiento que ordena enteros procesando sus dígitos de forma individual. 
+# Como los enteros pueden representar cadenas de caracteres (por ejemplo, nombres o fechas) y, especialmente, 
+# números en punto flotante especialmente formateados, radix sort no está limitado sólo a los enteros.
+
+
+#Binsort : el algoritmo asume que la entrada consiste de elementos en un rango pequeño, esto es, divide la entrada
+#  en n subconjuntos uniformes para después distribuir cada uno de los elementos en dichos subconjuntos. Así para producir 
+# la salida es únicamente necesario ordenar los elementos
