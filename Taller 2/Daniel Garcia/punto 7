@@ -1,0 +1,18 @@
+import time
+lista= [2,3,4,5,6,7,8,8,-2,-4,-7,2,-6]
+lista_negativos=[]
+
+
+def negativos():    
+    for i in lista:
+        if i < 0:
+            lista_negativos.append(i)
+
+print(lista_negativos) 
+
+
+start_time = time.time()
+negativos()
+print("agregar a negativos son %s segundos---" % (time.time()-start_time))
+
+#el peor de los casos seria cuando hay muchos numeros y todos son negativos
