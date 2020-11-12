@@ -1,0 +1,20 @@
+pila1=[]
+pila2=[]
+
+
+pila1.append(1)
+pila1.append(2)
+pila1.append(3)
+pila1.append(4)
+pila1.append(5)
+
+print(pila1)
+
+while(len(pila1)!=0):
+    pila2.append(pila1.pop())
+
+print(pila2)
+
+
+print("pila 1 despues del while --->",pila1)
+print("como se observar esta vacia")
