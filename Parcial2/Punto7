@@ -15,6 +15,11 @@ while(len(pila1)!=0):
 
 print(pila2)
 
+x = len(pila1)
 
-print("pila 1 despues del while --->",pila1)
-print("como se observar esta vacia")
+def isEmpty():
+    if(x==0):
+        print("La pila 1 esta vacia")
+
+isEmpty()
+
